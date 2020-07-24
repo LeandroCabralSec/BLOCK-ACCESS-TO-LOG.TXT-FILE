@@ -1,0 +1,11 @@
+Para segurança da web, proteger seus logs é fundamental, coloque o código abaixo no seu arquivo .htaccess e pronto.
+
+
+For web security, protecting your logs is essential, put the code below in your .htaccess file and you're done.
+
+# BLOQUEAR ACESSO AO ARQUIVO LOG.TXT #
+# BLOCK ACCESS TO LOG.TXT FILE #
+<Files ./inscription/log.txt>
+Order Allow,Deny
+Deny from all
+</Files>
